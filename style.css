@@ -1,25 +1,17 @@
-/* Reset de estilos para garantir uma base consistente */
-body, h1 {
+body {
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
+  }
+  
+  header {
     text-align: center;
-    padding: 20px;
-    width: 100%; /* Define a largura do cabeçalho como 100% */
-}
-
-.logo {
-    font-size: 24px;
-}
+  }
+  
+  h1 {
+    font-size: 3em;
+  }
+  
