@@ -1,11 +1,15 @@
 /* Reset de estilos para garantir uma base consistente */
-body, h1, h2, p, ul, li {
+body, h1 {
     margin: 0;
     padding: 0;
 }
 
 body {
     font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 header {
@@ -13,10 +17,9 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px;
-    justify-content: center;
+    width: 100%; /* Define a largura do cabeçalho como 100% */
 }
 
 h1 {
     font-size: 24px;
-    text-align: center;
 }
