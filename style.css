@@ -20,6 +20,6 @@ header {
     width: 100%; /* Define a largura do cabeçalho como 100% */
 }
 
-h1 {
+.logo {
     font-size: 24px;
 }
