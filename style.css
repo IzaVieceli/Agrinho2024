@@ -1,0 +1,84 @@
+/* Reset de estilos para garantir uma base consistente */
+body, h1, h2, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header-top {
+    margin-bottom: 10px;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-button {
+    display: none; /* Oculta o botão de menu em telas maiores */
+}
+
+.menu {
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+    position: relative;
+}
+
+.submenu-list {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.submenu-list li {
+    margin-bottom: 5px;
+}
+
+.menu li:hover .submenu-list {
+    display: block;
+}
+
+/* Media query para telas menores */
+@media only screen and (max-width: 600px) {
+    .header-bottom {
+        justify-content: flex-end;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-button {
+        display: inline-block; /* Exibe o botão de menu em telas menores */
+    }
+
+    .menu-button:hover + .menu {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    .menu-button:hover + .menu li {
+        display: block;
+        margin-right: 0;
+    }
+}
